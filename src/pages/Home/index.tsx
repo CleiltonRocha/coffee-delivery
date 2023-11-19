@@ -1,18 +1,14 @@
 import {
   Benefits,
   BenefitsContainer,
-  Card,
-  CoffeeList,
   CoffeeListContainer,
   HomeContainer,
   IntroContainer,
   LeftContainer,
-  TagList,
 } from './styles'
 import CoffeeImg from '../../assets/img-coffee.png'
-import Coffee0 from '../../assets/Coffee-0.png'
-
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
+import { CoffeeList } from './components/CoffeeList'
 
 export function Home() {
   return (
@@ -55,104 +51,7 @@ export function Home() {
       </IntroContainer>
       <CoffeeListContainer>
         <h1>Nossos cafés</h1>
-        <CoffeeList>
-          <Card>
-            <img src={Coffee0} alt="Café Expresso Tradicional" />
-            <TagList>
-              <span>Tradicional</span>
-            </TagList>
-            <h1>Expresso Tradicional</h1>
-            <p>Meio a meio de expresso tradicional com leite vaporizado</p>
-          </Card>
-          <Card>
-            <img src={Coffee0} alt="Café Expresso Tradicional" />
-            <TagList>
-              <span>Tradicional</span>
-            </TagList>
-            <h1>Expresso Tradicional</h1>
-            <p>Meio a meio de expresso tradicional com leite vaporizado</p>
-          </Card>
-          <Card>
-            <img src={Coffee0} alt="Café Expresso Tradicional" />
-            <TagList>
-              <span>Tradicional</span>
-            </TagList>
-            <h1>Expresso Tradicional</h1>
-            <p>Meio a meio de expresso tradicional com leite vaporizado</p>
-          </Card>
-          <Card>
-            <img src={Coffee0} alt="Café Expresso Tradicional" />
-            <TagList>
-              <span>Tradicional</span>
-            </TagList>
-            <h1>Expresso Tradicional</h1>
-            <p>Meio a meio de expresso tradicional com leite vaporizado</p>
-          </Card>
-          <Card>
-            <img src={Coffee0} alt="Café Expresso Tradicional" />
-            <TagList>
-              <span>Tradicional</span>
-            </TagList>
-            <h1>Expresso Tradicional</h1>
-            <p>Meio a meio de expresso tradicional com leite vaporizado</p>
-          </Card>
-          <Card>
-            <img src={Coffee0} alt="Café Expresso Tradicional" />
-            <TagList>
-              <span>Tradicional</span>
-            </TagList>
-            <h1>Expresso Tradicional</h1>
-            <p>Meio a meio de expresso tradicional com leite vaporizado</p>
-          </Card>
-          <Card>
-            <img src={Coffee0} alt="Café Expresso Tradicional" />
-            <TagList>
-              <span>Tradicional</span>
-            </TagList>
-            <h1>Expresso Tradicional</h1>
-            <p>Meio a meio de expresso tradicional com leite vaporizado</p>
-          </Card>
-          <Card>
-            <img src={Coffee0} alt="Café Expresso Tradicional" />
-            <TagList>
-              <span>Tradicional</span>
-            </TagList>
-            <h1>Expresso Tradicional</h1>
-            <p>Meio a meio de expresso tradicional com leite vaporizado</p>
-          </Card>
-          <Card>
-            <img src={Coffee0} alt="Café Expresso Tradicional" />
-            <TagList>
-              <span>Tradicional</span>
-            </TagList>
-            <h1>Expresso Tradicional</h1>
-            <p>Meio a meio de expresso tradicional com leite vaporizado</p>
-          </Card>
-          <Card>
-            <img src={Coffee0} alt="Café Expresso Tradicional" />
-            <TagList>
-              <span>Tradicional</span>
-            </TagList>
-            <h1>Expresso Tradicional</h1>
-            <p>Meio a meio de expresso tradicional com leite vaporizado</p>
-          </Card>
-          <Card>
-            <img src={Coffee0} alt="Café Expresso Tradicional" />
-            <TagList>
-              <span>Tradicional</span>
-            </TagList>
-            <h1>Expresso Tradicional</h1>
-            <p>Meio a meio de expresso tradicional com leite vaporizado</p>
-          </Card>
-          <Card>
-            <img src={Coffee0} alt="Café Expresso Tradicional" />
-            <TagList>
-              <span>Tradicional</span>
-            </TagList>
-            <h1>Expresso Tradicional</h1>
-            <p>Meio a meio de expresso tradicional com leite vaporizado</p>
-          </Card>
-        </CoffeeList>
+        <CoffeeList />
       </CoffeeListContainer>
     </HomeContainer>
   )

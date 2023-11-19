@@ -3,10 +3,15 @@ import styled from 'styled-components'
 export const HeaderContainer = styled.header`
   width: 100vw;
   height: 6.5rem;
+  background: ${(props) => props.theme.colors['base-background']};
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  z-index: 10;
 
   padding: 2rem 10rem;
 

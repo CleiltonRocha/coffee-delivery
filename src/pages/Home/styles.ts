@@ -15,6 +15,7 @@ export const IntroContainer = styled.div`
   background-repeat: no-repeat;
 
   padding: 5.75rem 10rem;
+  margin-top: 6.5rem;
 
   img {
     max-width: 29.75rem;
@@ -125,68 +126,5 @@ export const CoffeeListContainer = styled.div`
     font-size: ${(props) => props.theme.textSizes['title-title-l']};
     line-height: 130%;
     margin-bottom: 3.375rem;
-  }
-`
-
-export const CoffeeList = styled.div`
-  display: grid;
-  grid-template-columns: 16rem 16rem 16rem 16rem;
-  grid-template-rows: 4;
-  column-gap: 2rem;
-  row-gap: 2.5rem;
-`
-
-export const Card = styled.div`
-  border-radius: 6px 36px;
-  background: ${(props) => props.theme.colors['base-card']};
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding: 1.25rem 1.5rem;
-
-  img {
-    width: 7.5rem;
-    height: 7.5rem;
-    margin-top: -3rem;
-  }
-
-  h1 {
-    font-family: ${(props) => props.theme.fonts.title};
-    color: ${(props) => props.theme.colors['base-title']};
-    font-size: ${(props) => props.theme.textSizes['title-title-s']};
-    line-height: 130%;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-  }
-
-  p {
-    font-size: ${(props) => props.theme.textSizes['text-regular-s']};
-    color: ${(props) => props.theme.colors['base-label']};
-    text-align: center;
-  }
-`
-
-export const TagList = styled.div`
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.25rem;
-  margin-top: 0.75rem;
-
-  span {
-    padding: 0.25rem 0.5rem;
-    border-radius: 6.25rem;
-
-    font-size: ${(props) => props.theme.textSizes['components-tag']};
-    font-weight: bold;
-    text-transform: uppercase;
-
-    color: ${(props) => props.theme.colors['brand-yellow']};
-    background-color: ${(props) => props.theme.colors['brand-yellow-light']};
   }
 `
