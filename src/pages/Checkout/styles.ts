@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const CheckoutContainer = styled.main`
+export const CheckoutContainer = styled.form`
   width: 100vw;
 
   padding: 9rem 10rem;
@@ -89,33 +89,6 @@ export const OptionsContainer = styled.div`
   column-gap: 0.75rem;
 `
 
-export const Option = styled.button`
-  border: 0;
-  background-color: ${(props) => props.theme.colors['base-button']};
-  border-radius: 6px;
-
-  display: flex;
-  align-items: center;
-  justify-content: sart;
-  gap: 0.75rem;
-
-  padding: 1rem;
-  transition: 0.4s;
-
-  font-family: ${(props) => props.theme.fonts.regular};
-  font-size: ${(props) => props.theme.textSizes['components-button-s']};
-  text-transform: uppercase;
-  color: ${(props) => props.theme.colors['base-subtitle']};
-
-  svg {
-    color: ${(props) => props.theme.colors['brand-purple']};
-  }
-
-  &:hover {
-    background: ${(props) => props.theme.colors['base-hover']};
-  }
-`
-
 export const OrderDataContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -172,7 +145,7 @@ export const AmountContainer = styled.div`
   }
 `
 
-export const ConfirmOrderButton = styled.button`
+export const Button = styled.button`
   border: 0;
   display: flex;
   align-items: center;
@@ -193,5 +166,38 @@ export const ConfirmOrderButton = styled.button`
 
   &:hover {
     background-color: ${(props) => props.theme.colors['brand-yellow-dark']};
+  }
+`
+
+export const EmptyStateContainer = styled.div`
+  padding: 8rem 10rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    font-family: ${(props) => props.theme.fonts.title};
+    color: ${(props) => props.theme.colors['brand-yellow-dark']};
+    font-size: ${(props) => props.theme.textSizes['title-title-m']};
+    line-height: 130%;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  p {
+    color: ${(props) => props.theme.colors['base-text']};
+    text-align: center;
+    max-width: 30rem;
+    margin-top: 0.5rem;
+  }
+
+  button {
+    margin-top: 2rem;
+  }
+
+  @media ${(props) => props.theme.device.tablet} {
+    padding: 8rem 1rem;
   }
 `

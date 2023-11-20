@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const AddressFormContainer = styled.form`
+export const AddressFormContainer = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: 12.5rem 17.25rem 3.75rem;
@@ -19,6 +19,15 @@ export const AddressFormContainer = styled.form`
 
   .complement {
     grid-column: span 2;
+    position: relative;
+
+    &::after {
+      content: 'Optional';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: red;
+    }
   }
 
   input {

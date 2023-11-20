@@ -39,6 +39,10 @@ export const IntroContainer = styled.div`
 
     padding: 3rem 1.5rem;
   }
+
+  @media ${(props) => props.theme.device.laptop} {
+    padding: 2rem 3rem;
+  }
 `
 
 export const LeftContainer = styled.div`
@@ -126,5 +130,13 @@ export const CoffeeListContainer = styled.div`
     font-size: ${(props) => props.theme.textSizes['title-title-l']};
     line-height: 130%;
     margin-bottom: 3.375rem;
+  }
+
+  @media ${(props) => props.theme.device.tablet} {
+    padding: 2rem 1rem;
+  }
+
+  @media ${(props) => props.theme.device.laptop} {
+    padding: 2rem 3rem;
   }
 `

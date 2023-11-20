@@ -22,7 +22,7 @@ export const SuccessData = styled.div`
   }
 `
 
-export const OrderData = styled.div`
+export const Order = styled.div`
   padding: 2.5rem;
   border-radius: 6px 2.25rem !important;
   min-width: 32rem;

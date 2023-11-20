@@ -1,4 +1,4 @@
-import { ReactNode, createContext, useState } from 'react'
+import { ReactNode, createContext, useEffect, useState } from 'react'
 import { Coffee } from '../pages/Home/components/Card'
 import { produce } from 'immer'
 
@@ -16,16 +16,27 @@ interface CartContextType {
   ) => void
   removeItemFromCart: (cartItemId: string) => void
   totalCartItemsValue: number
+  cleanCartItems: () => void
 }
 
 interface CartContextProviderProps {
   children: ReactNode
 }
 
+const COFFEE_ITEMS_STORAGE_KEY = 'CoffeeDelivery:CartItems'
+
 export const CartContext = createContext({} as CartContextType)
 
 export function CartContextProvider({ children }: CartContextProviderProps) {
-  const [cartItems, setCartItems] = useState<CartItem[]>([])
+  const [cartItems, setCartItems] = useState<CartItem[]>(() => {
+    const storedCartItems = localStorage.getItem(COFFEE_ITEMS_STORAGE_KEY)
+
+    if (storedCartItems) {
+      return JSON.parse(storedCartItems)
+    }
+
+    return []
+  })
   const cartQuantity = cartItems.length
 
   const totalCartItemsValue = cartItems.reduce((total, item) => {
@@ -77,6 +88,14 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
     setCartItems(newCartItems)
   }
 
+  function cleanCartItems() {
+    setCartItems([])
+  }
+
+  useEffect(() => {
+    localStorage.setItem(COFFEE_ITEMS_STORAGE_KEY, JSON.stringify(cartItems))
+  }, [cartItems])
+
   return (
     <CartContext.Provider
       value={{
@@ -86,6 +105,7 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
         changeCartItemQuantity,
         removeItemFromCart,
         totalCartItemsValue,
+        cleanCartItems,
       }}
     >
       {children}
