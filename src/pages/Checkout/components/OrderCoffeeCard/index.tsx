@@ -1,5 +1,4 @@
 import { Trash } from 'phosphor-react'
-import coffee from '../../../../assets/coffee.png'
 import { AmountInput } from '../../../../components/AmountInput'
 import { CoffeeCard, CoffeeData, OrderDescription } from './styles'
 import { formatMoney } from '../../../../utils/formatMoney'
