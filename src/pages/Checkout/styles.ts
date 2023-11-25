@@ -8,6 +8,20 @@ export const CheckoutContainer = styled.form`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+
+  @media only screen and (min-width: 320px) and (max-width: 600px) {
+    display: flex;
+    flex-direction: column-reverse;
+
+    padding: 9rem 1.5rem;
+  }
+
+  @media only screen and (min-width: 601px) and (max-width: 1100px) {
+    display: flex;
+    flex-direction: column-reverse;
+
+    padding: 9rem 1.5rem;
+  }
 `
 
 export const OrderFormContainer = styled.div`
@@ -87,6 +101,12 @@ export const OptionsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 0.75rem;
+
+  @media only screen and (min-width: 320px) and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 `
 
 export const OrderDataContainer = styled.div`
@@ -111,6 +131,10 @@ export const ConfirmCardContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  @media only screen and (min-width: 320px) and (max-width: 600px) {
+    padding: 1.5rem;
+  }
 `
 
 export const AmountContainer = styled.div`

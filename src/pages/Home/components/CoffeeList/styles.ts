@@ -7,10 +7,6 @@ export const CoffeeMenu = styled.div`
   column-gap: 2rem;
   row-gap: 2.5rem;
 
-  /* @media only screen and (min-width: 320px) and (max-width: 580px) {
-    grid-template-columns: repeat(4, 1fr);
-  } */
-
   @media only screen and (min-width: 320px) and (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 13;
@@ -19,8 +15,4 @@ export const CoffeeMenu = styled.div`
   @media only screen and (min-width: 601px) and (max-width: 1100px) {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  /* @media ${(props) => props.theme.device.laptopL} {
-    grid-template-columns: repeat(4, 16rem);
-  } */
 `

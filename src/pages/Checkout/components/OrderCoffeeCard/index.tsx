@@ -29,7 +29,7 @@ export function OrderCoffeeCard({ coffeeCart }: OrderCoffeeCardProps) {
     <CoffeeCard>
       <CoffeeData>
         <OrderDescription>
-          <img src={coffee} alt="" width={64} height={64} />
+          <img src={coffeeCart.imgUrl} alt="" width={64} height={64} />
           <div>
             <span>{coffeeCart.name}</span>
             <div>

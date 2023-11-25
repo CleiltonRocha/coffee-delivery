@@ -1,5 +1,5 @@
 import { useFormContext } from 'react-hook-form'
-import { AddressFormContainer } from './styles'
+import { AddressFormContainer, ComplementContainer } from './styles'
 
 export function AddressForm() {
   const { register } = useFormContext()
@@ -19,12 +19,15 @@ export function AddressForm() {
         {...register('street')}
       />
       <input type="text" placeholder="Número" {...register('number')} />
-      <input
-        type="text"
-        placeholder="Complemento"
-        className="complement"
-        {...register('complement')}
-      />
+      <ComplementContainer>
+        <input
+          type="text"
+          placeholder="Complemento"
+          className="complement"
+          {...register('complement')}
+        />
+        <span>Optional</span>
+      </ComplementContainer>
       <input type="text" placeholder="Bairro" {...register('neightbourhood')} />
       <input type="text" placeholder="Cidade" {...register('city')} />
       <input type="text" placeholder="UF" {...register('uf')} />

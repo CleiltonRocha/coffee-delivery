@@ -19,6 +19,13 @@ export const CoffeeData = styled.div`
   justify-content: space-between;
 
   padding: 0.5rem 0.25rem;
+
+  @media only screen and (min-width: 320px) and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
 `
 
 export const OrderDescription = styled.div`
@@ -36,6 +43,11 @@ export const OrderDescription = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+
+    @media only screen and (min-width: 320px) and (max-width: 600px) {
+      justify-content: center;
+      align-items: center;
+    }
 
     > div {
       display: flex;
@@ -69,6 +81,15 @@ export const OrderDescription = styled.div`
           background-color: ${(props) => props.theme.colors['base-hover']};
         }
       }
+
+      @media only screen and (min-width: 320px) and (max-width: 600px) {
+        justify-content: center;
+        align-items: center;
+      }
     }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 600px) {
+    flex-direction: column;
   }
 `

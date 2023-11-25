@@ -8,6 +8,16 @@ export const AddressFormContainer = styled.div`
   row-gap: 1rem;
   grid-auto-flow: dense;
 
+  @media only screen and (min-width: 320px) and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+
+    .cep,
+    .street {
+      max-width: 100%;
+    }
+  }
+
   .cep {
     grid-column: span 3;
     max-width: 12.5rem;
@@ -18,8 +28,7 @@ export const AddressFormContainer = styled.div`
   }
 
   .complement {
-    grid-column: span 2;
-    position: relative;
+    width: 100%;
 
     &::after {
       content: 'Optional';
@@ -46,5 +55,20 @@ export const AddressFormContainer = styled.div`
     &::placeholder {
       color: ${(props) => props.theme.colors['base-label']};
     }
+  }
+`
+
+export const ComplementContainer = styled.div`
+  position: relative;
+  grid-column: span 2;
+
+  span {
+    position: absolute;
+    right: 1rem;
+    top: 0.75rem;
+
+    font-size: ${(props) => props.theme.textSizes['text-regular-s']};
+    font-style: italic;
+    color: ${(props) => props.theme.colors['base-label']};
   }
 `

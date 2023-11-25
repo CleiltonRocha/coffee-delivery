@@ -7,6 +7,29 @@ export const SuccessContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 4rem;
+
+  @media only screen and (min-width: 320px) and (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 9rem 1.5rem;
+
+    place-items: center;
+    row-gap: 2rem;
+  }
+
+  @media only screen and (min-width: 601px) and (max-width: 1100px) {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 9rem 1.5rem;
+
+    place-items: center;
+    row-gap: 2rem;
+  }
+
+  img {
+    @media only screen and (min-width: 320px) and (max-width: 600px) {
+      max-width: 100%;
+      padding: 1.5rem;
+    }
+  }
 `
 export const SuccessData = styled.div`
   h1 {
@@ -19,13 +42,17 @@ export const SuccessData = styled.div`
   p {
     font-size: ${(props) => props.theme.textSizes['text-regular-l']};
     color: ${(props) => props.theme.colors['base-subtitle']};
+
+    @media only screen and (min-width: 320px) and (max-width: 600px) {
+      max-width: 70%;
+    }
   }
 `
 
 export const Order = styled.div`
   padding: 2.5rem;
   border-radius: 6px 2.25rem !important;
-  min-width: 32rem;
+  width: 32rem;
   margin-top: 2.5rem;
 
   display: flex;
@@ -33,6 +60,11 @@ export const Order = styled.div`
   gap: 2rem;
   position: relative;
   background-color: ${(props) => props.theme.colors['base-background']};
+
+  @media only screen and (min-width: 320px) and (max-width: 600px) {
+    width: 22rem;
+    padding: 1.5rem;
+  }
 
   &:before {
     content: '';
