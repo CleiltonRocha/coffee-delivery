@@ -18,7 +18,7 @@ Immer ✅
 
 ## Screens
 
-<img src="https://github.com/CleiltonRocha/coffee-delivery/blob/main/.github/preview-1.png" width="1280px" height="480px" />
+<img src="https://github.com/CleiltonRocha/coffee-delivery/blob/main/.github/preview-1.png" width="1280px" height="400px" />
 Home page hero section
 
 <br/>
@@ -26,7 +26,7 @@ Home page hero section
 <br/>
 <br/>
 
-<img src="https://github.com/CleiltonRocha/coffee-delivery/blob/main/.github/preview-2.png" width="1280px" height="480px" />
+<img src="https://github.com/CleiltonRocha/coffee-delivery/blob/main/.github/preview-2.png" width="1280px" height="400px" />
 Coffee Menu
 
 <br/>
@@ -34,7 +34,7 @@ Coffee Menu
 <br/>
 <br/>
 
-<img src="https://github.com/CleiltonRocha/coffee-delivery/blob/main/.github/preview-3.png" width="1280px" height="480px" />
+<img src="https://github.com/CleiltonRocha/coffee-delivery/blob/main/.github/preview-3.png" width="1280px" height="400px" />
 Complete Order
 
 <br/>
@@ -42,7 +42,7 @@ Complete Order
 <br/>
 <br/>
 
-<img src="https://github.com/CleiltonRocha/coffee-delivery/blob/main/.github/preview-4.png" width="1280px" height="480px" />
+<img src="https://github.com/CleiltonRocha/coffee-delivery/blob/main/.github/preview-4.png" width="1280px" height="400px" />
 Order Confirmed
 
 
